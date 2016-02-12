@@ -34,11 +34,10 @@ module.exports = function(grunt) {
 
     // Combine Media Queries
     /** This task combines matching Media Queries and solves the Media Queries mess that SASS creates when compiling files with Media Queries nested inside an element. */
-    cmq: {
-      your_target: {
-        files: {
-          'dist/style': ["dist/style/*.css", "!dist/style/bootstrap.3.3.6.css"]
-        }
+    combine_mq: {
+      new_filename: {
+        src: 'dist/style/style.css',
+        dest: 'dist/style/style.css'
       }
     },
 
@@ -62,8 +61,8 @@ module.exports = function(grunt) {
   // Load plugins
   grunt.loadNpmTasks("grunt-contrib-compass");
   grunt.loadNpmTasks("grunt-contrib-copy");
-  grunt.loadNpmTasks('grunt-combine-media-queries');
+  grunt.loadNpmTasks('grunt-combine-mq');
 
   // Define tasks
-  grunt.registerTask("beautify", ["copy", "compass", "cmq"]);
+  grunt.registerTask("beautify", ["copy", "compass", "combine_mq"]);
 };

@@ -8,6 +8,6 @@
     "grunt-contrib-copy": "latest"
   },
   "devDependencies": {
-    "grunt-combine-media-queries": "^1.0.19"
+    "grunt-combine-mq": "^0.9.0"
   }
 }
