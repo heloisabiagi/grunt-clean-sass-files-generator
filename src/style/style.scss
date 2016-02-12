@@ -1,0 +1,42 @@
+// Frameworks Files
+@import "compass";
+
+// Frameworks Files
+@import "compass";
+
+$break-tablet: 620px;
+$break-large: 960px;
+
+.kitten-banner {
+	.jumbotron {
+		background-color: #6f5488;
+		color: #FFF;
+	}
+
+	@media screen and (min-width: $break-tablet) {
+		margin-top: 20px;
+	}
+}
+
+.kitten-container {
+	.thumbnail {
+		position: relative;
+	}
+	
+	img {
+		padding: 10px;
+		
+		@media screen and (min-width: $break-tablet) and (max-width: $break-large) {
+			position: absolute;
+			right: 0;
+			margin: 10px;
+			max-width: 150px;
+		}
+	}
+
+	.caption {
+		@media screen and (min-width: $break-tablet) and (max-width: $break-large) {
+			padding-right: 170px;
+		}
+	}
+}

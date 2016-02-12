@@ -1,0 +1,13 @@
+{
+  "name": "grunt-clean-sass-files-generator",
+  "version": "0.0.0",
+  "dependencies": {
+    "grunt": "latest",
+    "grunt-contrib-compass": "latest",
+    "grunt-cli": "latest",
+    "grunt-contrib-copy": "latest"
+  },
+  "devDependencies": {
+    "grunt-combine-media-queries": "^1.0.19"
+  }
+}
