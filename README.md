@@ -12,16 +12,15 @@ In order to remove these comments, you need to set "noLineComments": true in you
 ## Combine Media Queries
 For those who work with SASS and prefer nesting Media Queries inside an element, the output can be a real mess. This boilerplate installs a Grunt plugin called 'Combine Media Queries' that searchs for matching Media Queries in a CSS file, combines them and puts them at the end of the file. Nice, huh? These are the basic settings for this plugin:
 ```js
-cmq: {
-      your_target: {
-        files: {
-          'dist/style': ["dist/style/*.css"]
-        }
+ combine_mq: {
+      new_filename: {
+        src: 'src/style/style.css',
+        dest: 'dist/style/style.css'
       }
     }
 ```
 
-For more information, see: https://github.com/buildingblocks/grunt-combine-media-queries
+For more information, see: https://github.com/frontendfriends/grunt-combine-mq
 
 ## Kittens
 Why not some? :D
