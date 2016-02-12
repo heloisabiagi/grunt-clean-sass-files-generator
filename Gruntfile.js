@@ -33,7 +33,7 @@ module.exports = function(grunt) {
     },
 
     // Combine Media Queries
-    /** This task combines equal Media Queries and solves the Media Queries mess that SASS creates when compiling files where those media queries were declared inside an element declaration. */
+    /** This task combines matching Media Queries and solves the Media Queries mess that SASS creates when compiling files with Media Queries nested inside an element. */
     cmq: {
       your_target: {
         files: {
